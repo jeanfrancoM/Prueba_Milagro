@@ -123,7 +123,7 @@ namespace CapaDatos
           finally { dta_consulta.Dispose(); }
 
       }
-
+      //enzo metio mano aqui 
       public DataTable F_Listar_Bancos_Milagros()
       {
           DataTable dta_consulta = null;
