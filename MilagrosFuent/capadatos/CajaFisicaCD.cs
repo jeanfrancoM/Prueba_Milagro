@@ -17,6 +17,8 @@ namespace CapaDatos
         {
             try
             {
+
+                // que tal como va todo franco
                 using (SqlConnection sql_conexion = new SqlConnection())
                 {
                     sql_conexion.ConnectionString = ConfigurationManager.ConnectionStrings["BDCONEXION"].ConnectionString;
