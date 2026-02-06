@@ -104,7 +104,8 @@ namespace CapaDatos
           }
           finally { dta_consulta.Dispose(); }
       }
-
+      //asdasdjaskldnmvlkg
+      //sdkasfklsdnfklnbkn
 
       public DataTable F_Listar_NroCuenta(BancosCE objEntidadBE)
       {
