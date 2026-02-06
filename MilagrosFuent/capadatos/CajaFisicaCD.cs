@@ -17,7 +17,7 @@ namespace CapaDatos
         {
             try
             {
-
+                //ultimo cambio de franco
                 // que tal como va todo franco
                 using (SqlConnection sql_conexion = new SqlConnection())
                 {
