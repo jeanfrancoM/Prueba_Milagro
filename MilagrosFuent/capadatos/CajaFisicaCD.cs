@@ -12,7 +12,7 @@ namespace CapaDatos
 {
     public class CajaFisicaCD
     {
-
+        //mirando lo que hay denuevo 
         public CajaFisicaCE F_Liquidacion_Insert(CajaFisicaCE objEntidad)
         {
             try
