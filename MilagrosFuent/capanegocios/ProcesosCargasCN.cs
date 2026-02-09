@@ -12,7 +12,7 @@ namespace CapaNegocios
     {
         ProcesosCargasCD objdata = new ProcesosCargasCD();
 
-        public bool IngresarProceso(int codempresa, int codsede, int codusuario, int codvendedor, bool notaventa, decimal igv)
+   /*     public bool IngresarProceso(int codempresa, int codsede, int codusuario, int codvendedor, bool notaventa, decimal igv)
         {
             try
             {
@@ -23,7 +23,8 @@ namespace CapaNegocios
 
                 throw ex;
             }
-        }
+        }*/
+        //tocare aqui q puede pasar en procesocargaCN
 
         public DataTable ListarFaltantes(long IDPruebasExcelCab)
         {
