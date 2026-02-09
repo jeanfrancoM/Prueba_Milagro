@@ -1,0 +1,18 @@
+<connectionStrings>
+  <add name="ApplicationServices"
+       connectionString="Data Source=.\SQLEXPRESS;
+       Integrated Security=SSPI;
+       AttachDBFilename=|DataDirectory|\aspnetdb.mdf;
+       User Instance=true"
+       providerName="System.Data.SqlClient" />
+
+  <add name="BDCONEXION"
+       connectionString="Data Source=DESKTOP-VVCV578;
+       Initial Catalog=BDCASAPERNO;
+       User ID=sa;
+       Password=darkorbit;
+       TrustServerCertificate=True;
+       Encrypt=False;
+       Connection Timeout=100000"
+       providerName="System.Data.SqlClient" />
+</connectionStrings>

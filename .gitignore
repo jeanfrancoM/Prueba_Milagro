@@ -1,0 +1,37 @@
+# ===== .NET / Visual Studio =====
+bin/
+obj/
+.vs/
+
+# Archivos temporales y cache
+*.cache
+*.user
+*.suo
+*.tmp
+*.log
+
+# Debug / Release
+Debug/
+Release/
+
+# Rider / VS Code
+.idea/
+.vscode/
+
+# Publicaciones
+publish/
+
+# Test results
+TestResults/
+
+# Archivos del sistema
+Thumbs.db
+.DS_Store
+web.config.local
+
+
+
+
+
+
+
