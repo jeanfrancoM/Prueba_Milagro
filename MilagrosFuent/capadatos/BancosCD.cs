@@ -15,6 +15,7 @@ namespace CapaDatos
       {
           DataTable dta_consulta = null;
 
+          //vamos a probar de parte de francos
           try
           {
               using (SqlConnection sql_conexion = new SqlConnection())
