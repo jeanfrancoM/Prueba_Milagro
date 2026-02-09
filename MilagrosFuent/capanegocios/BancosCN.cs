@@ -25,6 +25,24 @@ namespace CapaNegocios
           }
       }
 
+
+      // hecho por franco para probar 
+      public DataTable F_Listar_Bancos()
+      {
+
+          try
+          {
+
+              return obj.F_Listar_Bancos();
+
+          }
+          catch (Exception ex)
+          {
+
+              throw ex;
+          }
+
+      }
       public DataTable F_Listar_Bancos()
       {
 
