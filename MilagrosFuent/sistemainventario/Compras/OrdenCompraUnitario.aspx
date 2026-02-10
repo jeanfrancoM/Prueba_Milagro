@@ -706,8 +706,17 @@
                     </tbody>
                 </table>
             </div>
+
+
             <div class="linea-button">
             </div>
+
+
+
+
+
+
+
             <div>
                 <table>
                     <tr>
@@ -745,19 +754,31 @@
                                                     <asp:HiddenField ID="hfDetalleCargado" runat="server" Value='0' />
                                                 </ItemTemplate>
                                             </asp:TemplateField>
-
-                                            <asp:TemplateField HeaderText="Descripcion" HeaderStyle-HorizontalAlign="Center">
+                                    
+                                    
+                         <%--                  <asp:TemplateField HeaderText="Descripcion" HeaderStyle-HorizontalAlign="Center">
                                                 <ItemStyle HorizontalAlign="Left" />
                                                 <ItemTemplate>
-                                                    <asp:HyperLink runat="server" ID="lblProducto"  Font-Bold="true" CssClass="ccsestilo"
-                                                       Width="480px" Font-Names="Arial" ForeColor="Blue"  Text='<%# Bind("Descripcion") %>' onclick="F_AgregarArticuloFromDsc(this.id); return false;">
-                                                       <asp:TextBox runat="server" ID="txtDescripcion" Font-Bold="true" CssClass="ccsestilo"
- 
+                                                    <asp:HyperLink runat="server" ID="lblProducto" Font-Underline="true" ForeColor="Blue" Font-Size="Medium"
+                                                        Style="cursor: hand" Text='<%# Bind("Descripcion") %>' onclick="F_AgregarArticuloFromDsc(this.id); return false;">
                                                     </asp:HyperLink>
                                                 </ItemTemplate>
-                                            </asp:TemplateField>
-<%--
-                             <asp:TemplateField HeaderText="Descripcion" ItemStyle-HorizontalAlign="Center">
+                                            </asp:TemplateField>--%>
+
+
+                                            
+                          <asp:TemplateField HeaderText="Descripcion">
+                                      <ItemStyle HorizontalAlign="Left" />
+                                                <ItemTemplate>
+                                                    <asp:Label runat="server" ID="lblProducto" Text='<%# Bind("Descripcion") %>' Font-Size="12PX"></asp:Label>
+                                                </ItemTemplate>
+                                 </asp:TemplateField>
+
+
+
+
+
+<%--                             <asp:TemplateField HeaderText="Descripcion" ItemStyle-HorizontalAlign="Center">
                             <ItemTemplate>
                                 <asp:TextBox runat="server" ID="txtDescripcion" Font-Bold="true" CssClass="ccsestilo"
                                     Width="480px" Font-Names="Arial" ForeColor="Blue" Text='<%# Bind("Producto") %>'
@@ -771,13 +792,13 @@
                                                   <asp:TemplateField HeaderText="Marca">
                                                 <ItemStyle HorizontalAlign="Left" />
                                                 <ItemTemplate>
-                                                    <asp:Label runat="server" ID="lblMarca" Text='<%# Bind("Marca") %>' Font-Size="Medium"></asp:Label>
+                                                    <asp:Label runat="server" ID="lblMarca" Text='<%# Bind("Marca") %>' Font-Size="12PX"></asp:Label>
                                                 </ItemTemplate>
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="Stock">
                                                 <ItemStyle HorizontalAlign="Center" />
                                                 <ItemTemplate>
-                                                    <asp:Label runat="server" ID="lblstock" Text='<%# Bind("Stock") %>' Font-Size="Medium"></asp:Label>
+                                                    <asp:Label runat="server" ID="lblstock" Text='<%# Bind("Stock") %>' Font-Size="12PX"></asp:Label>
                                                 </ItemTemplate>
                                             </asp:TemplateField>
                                             <asp:TemplateField HeaderText="UM">
