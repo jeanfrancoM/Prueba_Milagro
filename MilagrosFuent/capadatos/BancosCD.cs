@@ -15,6 +15,7 @@ namespace CapaDatos
       {
           DataTable dta_consulta = null;
 
+          //vamos a probar de parte de francos
           try
           {
               using (SqlConnection sql_conexion = new SqlConnection())
@@ -30,6 +31,38 @@ namespace CapaDatos
 
                       sql_comando.Parameters.Add("@CodEmpresa", SqlDbType.Int).Value = objEntidadBE.CodEmpresa;
                       sql_comando.Parameters.Add("@FlagCaja", SqlDbType.Int).Value = objEntidadBE.FlagCaja;
+
+                      dta_consulta = new DataTable();
+                      dta_consulta.Load(sql_comando.ExecuteReader());
+                      return dta_consulta;
+                  }
+              }
+          }
+          catch (Exception ex)
+          {
+              throw ex;
+          }
+          finally { dta_consulta.Dispose(); }
+      }
+
+      // hecho por franco el terror
+
+      public DataTable F_Listar_Bancos()
+      {
+          DataTable dta_consulta = null;
+
+          try
+          {
+              using (SqlConnection sql_conexion = new SqlConnection())
+              {
+                  sql_conexion.ConnectionString = ConfigurationManager.ConnectionStrings["BDCONEXION"].ConnectionString;
+                  sql_conexion.Open();
+
+                  using (SqlCommand sql_comando = new SqlCommand())
+                  {
+                      sql_comando.Connection = sql_conexion;
+                      sql_comando.CommandType = CommandType.StoredProcedure;
+                      sql_comando.CommandText = "pa_Bancos_Listar";
 
                       dta_consulta = new DataTable();
                       dta_consulta.Load(sql_comando.ExecuteReader());
